@@ -52,12 +52,12 @@ def sum_array(array)
   array.inject(:+)
 end
 
-def add_s(array)
-  array.collect do |element|
-    if array[element] = 1 
-      nil 
-    elesif 
-      element << "s"
+def add_s_collect(array)
+  array.each_with_index.collect do |word,index|
+    if index != 1 
+      word = word + "s"
+    else
+      word = word
     end
   end
 end
