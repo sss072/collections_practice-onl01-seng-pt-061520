@@ -28,7 +28,38 @@ end
 
 def swap_elements(array)
   array[1], array[2] = array[2], array[1]
+  return array 
 end
 
 def reverse_array(array)
+  array.reverse()
+end
+  
+def kesha_maker(array)
+  kesha_maker_2 = []
+  array.each do |element|
+    element[2] = "$"
+  kesha_maker_2 << element 
+  end
+  kesha_maker_2
+end
+
+def find_a(array)
+  array.select {|element| element.start_with?("a")}
+end
+
+def sum_array(array)
+  array.inject(:+)
+end
+
+def add_s(array)
+  array.collect do |element|
+    if array[element] = 1 
+      nil 
+    elesif 
+      element << "s"
+    end
+  end
+end
+    
   
